@@ -1,0 +1,276 @@
+/*  ================ Table of Content End ================
+        1. Fonts
+        2. Reset
+        3. Variables
+        4. Global
+        5. Header
+        6. Home  
+    ================ Table of Content End ================ */
+/*------------------------------------------------------------
+	Page Loading
+-------------------------------------------------------------*/
+/* .no-js #loader {
+    display: none;
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.counter {
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+
+.preloader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    background: url(../image/loader.gif) center no-repeat #1c1c1c;
+} */
+
+/* ======== Reset ======== */
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:active,
+a:focus {
+    outline: none;
+}
+
+/* ======== Variables ========*/
+:root {
+    --green-light: #416fe4;
+    --green-dark: #416fe4;
+    --bg-blue: #416fe4;
+}
+
+/* ======== Global ========*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-family: Arial, sans-serif;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+} */
+.bg-footer{
+    background-color: var(--green-dark);
+}
+.bg-green-light {
+    background-color: var(--green-light);
+}
+
+.bg-green-dark {
+    background-color: var(--green-dark);
+}
+
+.bg-blue {
+    background-color: var(--bg-blue);
+}
+.border-blue{
+    border: 1px solid var(--bg-blue);
+}
+.bg-transparent {
+    background-color: transparent !important;
+}
+
+.box-shadow-none {
+    box-shadow: none !important;
+}
+
+.text-sm {
+    font-size: 14px;
+}
+
+.text-xsm {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.text-md {
+    font-size: 16px;
+}
+
+.opcity-75 {
+    opacity: 0.75;
+}
+
+.hover-none:hover {
+    background-color: var(--green-dark) !important;
+
+}
+
+.t-blue {
+    color: var(--bg-blue);
+}
+
+.hovers:hover {
+   
+    background-color: var(--bg-blue);
+}
+
+.c-btn {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+.cus-form {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    background: none !important;
+} 
+.cus-form-control {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    /* background: none !important; */
+} 
+.cus-eff {
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+.w-60{
+    width: 60%;
+}
+/* ~~~~~~~~~~~~~~ Gloabal Classes End ~~~~~~~~~~~~~~~~~~~ */
+
+.header-form-select {
+    background-color: var(--green-light);
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    color: white; 
+} 
+.cus-form-select {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.ob-t-f {
+    object-fit: cover !important;
+} 
+/*============================== Mobile View========================= */
+
+.offcanvas.slider-left {
+    max-width: 70% !important;
+}
+
+.btn-close.c-close { 
+    background: url(../image/close.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    border: 0; 
+    opacity: 1 !important;
+}
+
+/* Mobile View Profile Icon style */
+.mobile-view-profile-icon {
+    width: 75px;
+    height: 75px;
+    background-color: #07b673;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ************************Home/Hero style************************** */ 
+ .home-form{
+    width: 100%;
+    /* height: 400px; */
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px; 
+ }
+ .shadow-none{
+    box-shadow: none!important;
+    border: none!important;
+    outline: none!important;
+     
+ }
+/* ******************************* Stream section ******************************** */
+ 
+
+/* **************************** Featured Colleges ************************ */
+.featured-img img {
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+}
+
+/* appBanner-hero */
+.appBanner-hero{
+    width: 100%;
+    height: 312px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url("../image/appbanner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    
+}
+/* ************************* Footer Section *************************** */
+.icon-box{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.footer-link li{
+    margin-bottom: 7px;
+}
+.footer-link li{
+    font-size: 14px;
+    color: #fff;
+}
+/* Responsive style */
+@media (max-width:768px) { 
+    .h-350{
+        height: 550px!important;
+    }
+    .h-350 img{
+        height: 550px!important;
+    }
+     
+}
